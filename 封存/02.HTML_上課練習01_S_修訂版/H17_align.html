@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>示範儲存格對齊</title>
+    <style>
+      /* 表格框線：HTML5 改用 CSS 設定（取代 border="1"） */
+      table, th, td { border: 1px solid #999; }
+      table { border-collapse: collapse; }
+      th, td { padding: 4px 8px; }
+      table { width: 100%; }
+      /* 水平對齊：text-align（取代 align 屬性） */
+      .left   { text-align: left; }
+      .center { text-align: center; }
+      .right  { text-align: right; }
+      /* 垂直對齊：vertical-align（取代 valign 屬性） */
+      .top    { vertical-align: top; }
+      .middle { vertical-align: middle; }
+      .bottom { vertical-align: bottom; }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><img src="piece1.jpg" alt="喬巴" width="100"></td>
+        <td class="left">靠左對齊</td>
+        <td class="center">水平置中</td>
+        <td class="right">靠右對齊</td>
+      </tr>
+      <tr>
+        <td><img src="piece2.jpg" alt="索隆" width="100"></td>
+        <td class="top">靠上對齊</td>
+        <td class="middle">垂直置中</td>
+        <td class="bottom">靠下對齊</td>
+      </tr>
+      <tr>
+        <td><img src="piece3.jpg" alt="佛朗基" width="100"></td>
+        <td class="right top">靠右上對齊</td>
+        <td class="center middle">水平垂直置中</td>
+        <td class="right bottom">靠右下對齊</td>
+      </tr>
+    </table>
+  </body>
+</html>
